@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script >
+        let datakey = ['dumb', 'ways', 'the', 'best'];
+        let key = 'dumbways';
+
+// 
+
+function checkArr(arr, string) {
+  let result = []
+
+  for (let i = 0; i < arr.length; i++) {
+    let word = []
+    word.push(arr[i])
+
+    if (string.includes(arr[i]) === true) {
+      word.push('true');
+    } else {
+      word.push('false')
+    }
+
+    result.push(word)
+  }
+
+  return result;
+
+}
+
+console.log(checkArr(datakey, key));
+// result
+ // [ [ 'dumb', 'true' ],
+//   [ 'ways', 'true' ],
+//   [ 'the', 'false' ],
+//   [ 'best', 'false' ] ]
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
