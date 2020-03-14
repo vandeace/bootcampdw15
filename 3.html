@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JAWABAN NO 3 BUKA DI CONSOLE</h1>
+    <script >
+        function square(rows,cols){
+            var isOdd = false;
+            if(rows%2!==0 && cols%2!==0){//hitung dulu apakah nilai row dan cols sudah ganjil
+                isOdd = true;//klo sudah masukkan code dibawah
+                for(var i=1; i<=rows; i++){
+            for(var j=1; j<=cols; j++){
+                if(i%2==0){
+                if(j%2==0){
+                    document.write("  ","*","  ");
+                }else{
+                    document.write("  ","=","  ");   
+                }
+                }
+                else{
+                    if(j%2==0){
+                        document.write("  ","=","  ");
+                    }else{
+                        document.write("  ","*","  ");
+                    }       
+                }
+            }
+            document.write("<br/>");
+        }
+            }else{
+                isOdd = false;//klo salah munculkan pesan
+                alert("masukkan parameter ganjil!!")
+        }
+    }
+
+       
+        
+
+
+       
+    </script>
+</body>
+</html>
